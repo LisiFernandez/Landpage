@@ -1,0 +1,184 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+/* Seção Hero com imagem de fundo */
+#hero {
+    background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    max-width: 1800px;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hero h1, #hero p, #hero .cta-button {
+    position: relative;
+    z-index: 1;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Seções principais */
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1, h2 {
+    color: #FF8C00;
+}
+
+/* Botões */
+.cta-button, .contact-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #FF8C00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover, .contact-button:hover {
+    background-color: #FF6600;
+}
+
+.contact-button {
+    background-color: #808080;
+}
+
+.contact-button:hover {
+    background-color: #666666;
+}
+
+/* Lista de benefícios */
+#beneficios ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#beneficios li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+#beneficios li::before {
+    content: "✓";
+    color: #FF8C00;
+    position: absolute;
+    left: 0;
+}
+
+/* Seção de inscrição */
+#inscricao {
+    background-color: #FFF5E6;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FF8C00;
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto no footer */
+    padding: 20px; /* Espaçamento interno */
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Mantém o footer no final da página */
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+.footer-logo img {
+    margin-bottom: 10px;
+    max-width: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.footer-links,
+.footer-social,
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+.img-logo {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;}
+
+
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+}
